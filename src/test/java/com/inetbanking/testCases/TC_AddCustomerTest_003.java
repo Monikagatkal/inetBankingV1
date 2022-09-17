@@ -1,17 +1,27 @@
 package com.inetbanking.testCases;
 
 import java.io.IOException;
+import java.time.Duration;
+import java.util.function.Function;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
 
 import com.inetbanking.pageObjects.AddCustomerPage;
 import com.inetbanking.pageObjects.LoginPage;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import junit.framework.Assert;
 
-public class TC_AddCustomerTest_003 extends BaseClass {
+public class TC_AddCustomerTest_003 extends BaseClass{
 	
 	@Test
 	public void addNewCustome() throws InterruptedException, IOException 
@@ -30,10 +40,19 @@ public class TC_AddCustomerTest_003 extends BaseClass {
 		
 		add.clickAddNewCustomer();
 		
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
+		/*WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));    
+		By elem_dynamic = By.id("dynamic-element");
+		wait.until(ExpectedConditions.presenceOfElementLocated(elem_dynamic));*/
 		
-		driver.switchTo().frame("iframe");		
-		driver.findElement(By.xpath("//div[@id='dismiss-button']")).click();
+		
+		
+		
+		driver.switchTo().frame("iframe");
+		//WebElement firstResult = new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='dismiss-button']")));
+		
+		
+		//driver.findElement(By.xpath("//div[@id='dismiss-button']")).click();
 		
 		logger.info("PRovided Customer Details....");
 		add.custName("Monika");
@@ -67,6 +86,8 @@ public class TC_AddCustomerTest_003 extends BaseClass {
 		}
 		
 	}
+
+	
 	
 	
 }

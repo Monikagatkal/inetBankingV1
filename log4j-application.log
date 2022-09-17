@@ -454,4 +454,39 @@
  2022-09-13 15:24:24,415  INFO [main] ebanking:24 - Password is Provided
  2022-09-13 15:34:36,186  INFO [main] ebanking:22 - User Name is Provided
  2022-09-13 15:34:36,280  INFO [main] ebanking:24 - Password is Provided
+ 2022-09-17 08:40:48,171  INFO [main] ebanking:25 - User Name is Provided
+ 2022-09-17 08:40:48,282  INFO [main] ebanking:27 - Password is Provided
+ 2022-09-17 08:41:39,282  INFO [main] ebanking:25 - User Name is Provided
+ 2022-09-17 08:41:39,407  INFO [main] ebanking:27 - Password is Provided
+ 2022-09-17 08:44:09,268  INFO [main] ebanking:20 - URL is Opened
+ 2022-09-17 08:44:09,443  INFO [main] ebanking:24 - Entered UserName
+ 2022-09-17 08:44:09,717  INFO [main] ebanking:27 - Entered Password
+ 2022-09-17 08:44:13,426  INFO [main] ebanking:35 - Login test Passed
+ 2022-09-17 08:44:24,587  INFO [main] ebanking:20 -  Username is Provided
+ 2022-09-17 08:44:24,787  INFO [main] ebanking:22 - Password is Provided
+ 2022-09-17 08:44:33,076  INFO [main] ebanking:37 - Login Passed
+ 2022-09-17 08:44:38,789  INFO [main] ebanking:20 -  Username is Provided
+ 2022-09-17 08:44:38,878  INFO [main] ebanking:22 - Password is Provided
+ 2022-09-17 08:44:43,516  INFO [main] ebanking:20 -  Username is Provided
+ 2022-09-17 08:44:43,579  INFO [main] ebanking:22 - Password is Provided
+ 2022-09-17 08:45:26,260  INFO [main] ebanking:20 - URL is Opened
+ 2022-09-17 08:45:26,439  INFO [main] ebanking:24 - Entered UserName
+ 2022-09-17 08:45:26,513  INFO [main] ebanking:27 - Entered Password
+ 2022-09-17 08:45:27,754  INFO [main] ebanking:35 - Login test Passed
+ 2022-09-17 08:45:41,045  INFO [main] ebanking:20 -  Username is Provided
+ 2022-09-17 08:45:41,145  INFO [main] ebanking:22 - Password is Provided
+ 2022-09-17 08:45:44,154  INFO [main] ebanking:37 - Login Passed
+ 2022-09-17 08:45:48,126  INFO [main] ebanking:20 -  Username is Provided
+ 2022-09-17 08:45:48,193  INFO [main] ebanking:22 - Password is Provided
+ 2022-09-17 08:45:52,125  INFO [main] ebanking:20 -  Username is Provided
+ 2022-09-17 08:45:52,193  INFO [main] ebanking:22 - Password is Provided
+ 2022-09-17 09:32:28,490  INFO [main] ebanking:16 - User Name is Provided
+ 2022-09-17 09:32:28,633  INFO [main] ebanking:18 - Password is Provided
+ 2022-09-17 09:39:45,854  INFO [main] ebanking:16 - User Name is Provided
+ 2022-09-17 09:39:45,967  INFO [main] ebanking:18 - Password is Provided
+ 2022-09-17 09:39:51,219  INFO [main] ebanking:24 - Delete Customer information
+ 2022-09-17 09:46:26,444  INFO [main] ebanking:16 - User Name is Provided
+ 2022-09-17 09:46:26,558  INFO [main] ebanking:18 - Password is Provided
+ 2022-09-17 09:46:39,617  INFO [main] ebanking:25 - Delete Customer information
+ 2022-09-17 09:46:39,703  INFO [main] ebanking:28 - Validation started....
  
