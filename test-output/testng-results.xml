@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-17T09:46:11 IST" name="Default suite" finished-at="2022-09-17T09:46:40 IST" duration-ms="28795">
+  <suite started-at="2022-09-17T10:21:39 IST" name="Default suite" finished-at="2022-09-17T10:22:14 IST" duration-ms="35070">
     <groups>
     </groups>
-    <test started-at="2022-09-17T09:46:11 IST" name="Default test" finished-at="2022-09-17T09:46:40 IST" duration-ms="28795">
+    <test started-at="2022-09-17T10:21:39 IST" name="Default test" finished-at="2022-09-17T10:22:14 IST" duration-ms="35070">
       <class name="com.inetbanking.testCases.TC_DeleteCustomer_004">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_DeleteCustomer_004@222545dc]" started-at="2022-09-17T09:46:11 IST" name="setUp" finished-at="2022-09-17T09:46:26 IST" duration-ms="14857" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_DeleteCustomer_004@222545dc]" started-at="2022-09-17T10:21:39 IST" name="setUp" finished-at="2022-09-17T10:21:56 IST" duration-ms="16793" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteCustomerId()[pri:0, instance:com.inetbanking.testCases.TC_DeleteCustomer_004@222545dc]" started-at="2022-09-17T09:46:26 IST" name="deleteCustomerId" finished-at="2022-09-17T09:46:39 IST" duration-ms="13494" status="PASS">
+        <test-method signature="deleteCustomerId()[pri:0, instance:com.inetbanking.testCases.TC_DeleteCustomer_004@222545dc]" started-at="2022-09-17T10:21:56 IST" name="deleteCustomerId" finished-at="2022-09-17T10:22:13 IST" duration-ms="17812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCustomerId -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_DeleteCustomer_004@222545dc]" started-at="2022-09-17T09:46:39 IST" name="tearDown" finished-at="2022-09-17T09:46:40 IST" duration-ms="388" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_DeleteCustomer_004@222545dc]" started-at="2022-09-17T10:22:13 IST" name="tearDown" finished-at="2022-09-17T10:22:14 IST" duration-ms="397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -489,4 +489,16 @@
  2022-09-17 09:46:26,558  INFO [main] ebanking:18 - Password is Provided
  2022-09-17 09:46:39,617  INFO [main] ebanking:25 - Delete Customer information
  2022-09-17 09:46:39,703  INFO [main] ebanking:28 - Validation started....
+ 2022-09-17 10:16:09,126  INFO [main] ebanking:16 - User Name is Provided
+ 2022-09-17 10:16:09,222  INFO [main] ebanking:18 - Password is Provided
+ 2022-09-17 10:16:24,563  INFO [main] ebanking:25 - Delete Customer information
+ 2022-09-17 10:16:25,210  INFO [main] ebanking:28 - Validation started....
+ 2022-09-17 10:18:19,190  INFO [main] ebanking:16 - User Name is Provided
+ 2022-09-17 10:18:19,288  INFO [main] ebanking:18 - Password is Provided
+ 2022-09-17 10:18:35,014  INFO [main] ebanking:25 - Delete Customer information
+ 2022-09-17 10:18:35,221  INFO [main] ebanking:29 - Validation started....
+ 2022-09-17 10:21:56,390  INFO [main] ebanking:16 - User Name is Provided
+ 2022-09-17 10:21:56,509  INFO [main] ebanking:18 - Password is Provided
+ 2022-09-17 10:22:10,670  INFO [main] ebanking:25 - Delete Customer information
+ 2022-09-17 10:22:13,961  INFO [main] ebanking:30 - Validation started....
  

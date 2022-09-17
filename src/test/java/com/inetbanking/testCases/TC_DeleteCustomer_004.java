@@ -24,8 +24,10 @@ public class TC_DeleteCustomer_004 extends BaseClass{
 	Thread.sleep(5000);
 	logger.info("Delete Customer information");
 	delete.custID("65854");
-	
+	Thread.sleep(3000);
+	delete.custDeletesubmit();
 	logger.info("Validation started....");
+	
 	
 		
 	

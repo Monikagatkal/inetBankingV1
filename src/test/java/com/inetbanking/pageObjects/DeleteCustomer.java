@@ -36,8 +36,9 @@ WebDriver ldriver;
 		delcustId.sendKeys(String.valueOf(cId));
 	}
 	
-	public void custsubmit() {
+	public void custDeletesubmit() {
 		btnSubmit.click();
+		System.out.println("Customer deleted");
 	}
 	
 	
