@@ -14,23 +14,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import com.inetbanking.utilities.ReadConfig;
 
 public class BaseClass {
-	
+
 	public static WebDriver driver;
-	
-	
+
+
 	ReadConfig readconfig=new ReadConfig();
 
 	public String baseURL = readconfig.getApplicationURL();
@@ -38,20 +33,20 @@ public class BaseClass {
 	public String password = readconfig.getPassword();
 
 
-	
-	public static Logger logger;
-	
 
-	
-	
+	public static Logger logger;
+
+
+
+
 	@Parameters("browser")
 	@BeforeClass
 	public void setUp(@Optional("chrome") String br)
 	{
-		
+
 		logger =Logger.getLogger("ebanking");
 		PropertyConfigurator.configure("log4j.properties");
-	
+
 
 		if(br.equals("chrome"))
 		{
@@ -65,41 +60,40 @@ public class BaseClass {
 			driver = new EdgeDriver();
 		}
 		driver.get(baseURL);
-		
+
 	}
 
 	@AfterClass
 	public void tearDown()
 	{
 		driver.quit();
-		
-		//extent.flush();
+
 	}
-	
-	public void captureScreen(WebDriver driver, String tname) throws IOException {
-		
-		
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File sourc = ts.getScreenshotAs(OutputType.FILE);
-		File target = new File(System.getProperty("user.dir")+"/Screenshots/"+tname + ".png");
-		FileUtils.copyFile(sourc, target);
-		System.out.println("ScreenShot Taken");
+
+	public String takeScreenShot(String testName, WebDriver driver) throws IOException {
+
+		File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String destinationFilePath = System.getProperty("user.dir")+"\\screenshots\\"+testName+".png";
+		FileUtils.copyFile(sourceFile, new File(destinationFilePath));
+
+		return destinationFilePath;
 	}
-	
+
+
 	public String randomestring()
 	{
 		String generatedstring = RandomStringUtils.randomAlphabetic(8);
 		return (generatedstring);
 	}
-	
+
 	public String randomeNum()
 	{
 		String generatedstring2 = RandomStringUtils.randomNumeric(4);
 		return (generatedstring2);
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 }

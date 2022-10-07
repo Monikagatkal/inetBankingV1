@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -22,37 +23,26 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import junit.framework.Assert;
 
 public class TC_AddCustomerTest_003 extends BaseClass{
-	
+		
 	@Test
 	public void addNewCustome() throws InterruptedException, IOException 
-	{
+	{		
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.setUserName(username);
-		logger.info("User Name is Provided");
+		logger.info("Entered UserName");
+		
 		lp.setPassword(password);
-		logger.info("Password is Provided");
+		logger.info("Entered Password");
+		
 		lp.clickSubmit();
 		
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		AddCustomerPage add = new AddCustomerPage(driver);
 		
+		Thread.sleep(10000);
 		add.clickAddNewCustomer();
-		
-		//Thread.sleep(10000);
-		/*WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));    
-		By elem_dynamic = By.id("dynamic-element");
-		wait.until(ExpectedConditions.presenceOfElementLocated(elem_dynamic));*/
-		
-		
-		
-		
-		driver.switchTo().frame("iframe");
-		//WebElement firstResult = new WebDriverWait(driver,5).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='dismiss-button']")));
-		
-		
-		//driver.findElement(By.xpath("//div[@id='dismiss-button']")).click();
 		
 		logger.info("PRovided Customer Details....");
 		add.custName("Monika");

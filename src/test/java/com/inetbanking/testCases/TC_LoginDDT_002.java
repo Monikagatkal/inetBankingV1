@@ -12,6 +12,7 @@ import com.inetbanking.utilities.XLUtils;
 
 public class TC_LoginDDT_002 extends BaseClass
 {
+	
 	@Test(dataProvider = "LoginData")
 	public void loginDDT(String user,String pwd) throws IOException 
 	{
@@ -26,8 +27,9 @@ public class TC_LoginDDT_002 extends BaseClass
 		{
 			driver.switchTo().alert().accept();
 			driver.switchTo().defaultContent();
+			takeScreenShot("LoginData",driver);
 			Assert.assertTrue(false);
-			//captureScreen(driver,"loginDDT");
+			//takeScreenShot("loginTest",driver);
 			logger.warn("Login Failed");
 
 		}
@@ -35,7 +37,6 @@ public class TC_LoginDDT_002 extends BaseClass
 		{
 			Assert.assertTrue(true);
 			logger.info("Login Passed");
-			//captureScreen(driver,"loginDDT");
 			lp.clickLogout();
 			driver.switchTo().alert().accept();
 			driver.switchTo().defaultContent();

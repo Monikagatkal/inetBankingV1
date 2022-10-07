@@ -56,12 +56,14 @@
     <version>4.3.0</version>
 </dependency>
     
-    <dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.6.1</version>
     <scope>test</scope>
 </dependency>
+
     
     <dependency>
     <groupId>org.apache.poi</groupId>
@@ -75,16 +77,11 @@
     <version>5.2.2</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
-    <version>4.0.9</version>
-</dependency>
-    
-   <dependency>
-    <groupId>io.reactivex.rxjava3</groupId>
-    <artifactId>rxjava</artifactId>
-    <version>3.0.4</version>
+    <version>5.0.9</version>
 </dependency>
 
     

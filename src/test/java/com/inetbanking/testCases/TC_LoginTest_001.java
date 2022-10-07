@@ -33,11 +33,10 @@ public class TC_LoginTest_001 extends BaseClass
 		{
 			Assert.assertTrue(true);
 			logger.info("Login test Passed");
-			//captureScreen(driver,"loginTest");
 		}
 		else
 		{
-			captureScreen(driver,"loginTest");
+			takeScreenShot("loginTest",driver);
 			Assert.assertTrue(false);
 			logger.info("Login test Failed");
 		}
